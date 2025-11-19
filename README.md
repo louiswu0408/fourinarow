@@ -2,6 +2,8 @@
 
 Four-in-a-Row is a console-based Java implementation of the classic Connect Four game. Two players take turns dropping their pieces into a 7x7 grid, aiming to get four in a row — horizontally, vertically, or diagonally.
 
+---
+
 ## Features
 
 - 7x7 game board displayed in the console  
@@ -9,6 +11,8 @@ Four-in-a-Row is a console-based Java implementation of the classic Connect Four
 - Input validation to prevent invalid moves  
 - Automatic detection of win and tie conditions  
 - Error handling for non-integer inputs  
+
+---
 
 ## How to Run
 
