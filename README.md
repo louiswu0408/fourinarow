@@ -27,7 +27,7 @@
 
 ```bash
 git clone https://github.com/YOUR_USERNAME/4-in-a-row.git
-cd 4-in-a-row
+cd fourinarow/fourinarow
 ```
 
 2. Compile the Java files
