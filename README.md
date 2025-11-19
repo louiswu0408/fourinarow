@@ -26,7 +26,7 @@
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/4-in-a-row.git
+git clone https://github.com/louiswu0408/fourinarow.git
 cd fourinarow/fourinarow
 ```
 
