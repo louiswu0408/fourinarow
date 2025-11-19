@@ -31,5 +31,6 @@ javac *.java
 ```
 
 3  **Run the game**
+```bash
 cd ..
 java fourinarow.Fourinarow
