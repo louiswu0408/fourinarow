@@ -1,16 +1,16 @@
 # Four-in-a-Row
 
-Four-in-a-Row is a console-based Java implementation of the classic Connect Four game. Two players take turns dropping their pieces into a 7x7 grid, aiming to get four in a row — horizontally, vertically, or diagonally.
+**Four-in-a-Row** is a console-based Java implementation of the classic **Connect Four** game. Two players take turns dropping their pieces into a 7x7 grid, aiming to get **four in a row** — horizontally, vertically, or diagonally.
 
 ---
 
 ## Features
 
-- 7x7 game board displayed in the console  
-- Two-player turn-based gameplay  
-- Input validation to prevent invalid moves  
-- Automatic detection of win and tie conditions  
-- Error handling for non-integer inputs  
+- 7x7 game board displayed in the console
+- Two-player turn-based gameplay
+- Input validation to prevent invalid moves
+- Automatic detection of win and tie conditions
+- Error handling for non-integer inputs
 
 ---
 
@@ -18,23 +18,27 @@ Four-in-a-Row is a console-based Java implementation of the classic Connect Four
 
 ### Prerequisites
 
-- Java JDK installed (version 8 or higher)  
-- Git (optional, for cloning the repository)  
+- Java JDK installed (version 8 or higher)
+- Git (optional, for cloning the repository)
 
 ### Steps
 
-1. **Clone the repository**  
+1. Clone the repository:
+
 ```bash
-git clone https://github.com/louiswu0408/fourinarow.git
-cd fourinarow/fourinarow
+git clone https://github.com/YOUR_USERNAME/4-in-a-row.git
+cd 4-in-a-row
 ```
 
-2. **Compile the Java files**
+2. Compile the Java files
+
 ```bash
 javac *.java
 ```
 
-3  **Run the game**
+3. Run the game
+
 ```bash
 cd ..
 java fourinarow.Fourinarow
+```
