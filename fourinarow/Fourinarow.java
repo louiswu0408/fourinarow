@@ -52,32 +52,44 @@ public class Fourinarow {  //replace the default null with _
        }
         Scanner input = new Scanner(System.in); //input
         while(true){
-        try{
-        if(count%2==0){
-        System.out.print("O will have next move ");
-        }
-        else{
-            System.out.print("X will have next move: ");
-        }
-        int x = input.nextInt()-1;
-        while(0>x||x>6){   //make the the input integer is in range
-            System.out.print("please input a integer between 1 to 7 ");
-             x = input.nextInt()-1;
-        }
-        count++;
-        Fourinarow.four(x);
-        }
-        catch(InputMismatchException e) {   //avoid wrong data type inputs
-            System.out.println("Error: You did not enter a valid integer.");
-            // Clear the scanner buffer
-            input.next();
-        }
-        System.out.println();
-        wincondition.towin();   //call subclasses
-        wincondition2.towin2();
-        wincondition3.towin3();
-        wincondition4.towin4();
-        tie.tie();
-    }       
-}
+            try{
+            if(count%2==0){
+            System.out.print("O will have next move (enter q to quit):");
+            }
+            else{
+                System.out.print("X will have next move (enter q to quit):");
+            }
+            String userInput = input.next();  // read input as String
+
+            if(userInput.equalsIgnoreCase("q")){  // check for quit
+                System.out.println("Game quit by user.");
+                break; // exit the loop
+            }
+            int x = Integer.parseInt(userInput) - 1; 
+            while(0>x||x>6){   //make the the input integer is in range
+                System.out.print("please input a integer between 1 and 7: ");
+                userInput = input.next();
+                if(userInput.equalsIgnoreCase("q")){
+                    System.out.println("Game quit by user.");
+                    break;
+                }
+                x = Integer.parseInt(userInput) - 1;
+            }
+            if(userInput.equalsIgnoreCase("q")) break;
+            count++;
+            Fourinarow.four(x);
+            }
+            catch(InputMismatchException e) {   //avoid wrong data type inputs
+                System.out.println("Error: You did not enter a valid integer or 'q'.");
+                // Clear the scanner buffer
+                input.next();
+            }
+            System.out.println();
+            wincondition.towin();   //call subclasses
+            wincondition2.towin2();
+            wincondition3.towin3();
+            wincondition4.towin4();
+            tie.tie();
+        }       
+    }
 }
